@@ -4,7 +4,7 @@ const client = new Client()
 
 var prefix = '.'
 
-const { clientId } = require('./config.json');
+const clientId = process.env.CLIENT_ID;
 const guildId = client.guilds.cache.id;
 const token = process.env.BOT_TOKEN;
 
