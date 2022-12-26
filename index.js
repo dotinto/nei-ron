@@ -7,7 +7,7 @@ var commands = []
 const fs = require('fs')
 fs.readFile('commands.json', (data, err) => {
   if (err) {
-    throw err;
+    return err
   }
   commands = JSON.parse(data)
 })
