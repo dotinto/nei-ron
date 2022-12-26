@@ -1,5 +1,5 @@
 const { REST, Routes, Client } = require('discord.js');
-
+const fs = require('node:fs')
 const client = new Client()
 
 var prefix = '.'
