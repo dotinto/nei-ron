@@ -1,4 +1,5 @@
 const { REST, Routes, Discord } = require('discord.js');
+
 const client = new Discord.Client()
 
 var prefix = '.'
