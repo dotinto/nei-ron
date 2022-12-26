@@ -1,6 +1,7 @@
 const Discord = require('discord.js')
 const client = new Discord.Client()
 
+var prefix = '.'
 var commands = []
 
 const fs = require('fs')
@@ -19,7 +20,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
   commands.forEach(cmd => {
-    if (cmd == ('.' + message.content)) {
+    if (cmd == (prefix + message.content)) {
       message.channel.send(cmd.response)
     }
   })
