@@ -1,6 +1,6 @@
-const { REST, Routes, Discord } = require('discord.js');
+const { REST, Routes, Client } = require('discord.js');
 
-const client = new Discord.Client()
+const client = new Client()
 
 var prefix = '.'
 
