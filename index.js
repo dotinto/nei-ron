@@ -19,9 +19,5 @@ client.on('ready', () => {
 })
 
 client.on('message', message => {
-  commands.forEach(cmd => {
-    if (cmd == (prefix + message.content)) {
-      message.channel.send(cmd.response)
-    }
-  })
+  
 })
